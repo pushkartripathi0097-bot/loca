@@ -4,21 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loca App - Download Now</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-        .card { background: white; padding: 40px 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 100%; }
-        h1 { color: #1a1a1a; font-size: 28px; margin-bottom: 10px; }
-        p { color: #666; font-size: 15px; margin-bottom: 25px; line-height: 1.5; }
-        .btn { background: #007bff; color: white; padding: 14px 28px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; display: inline-block; transition: background 0.3s; width: 100%; }
-        .btn:hover { background: #0056b3; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            padding: 20px; 
+            color: #fff;
+        }
+        .card { 
+            background: rgba(255, 255, 255, 0.05); 
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            padding: 40px 30px; 
+            border-radius: 24px; 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); 
+            text-align: center; 
+            max-width: 420px; 
+            width: 100%; 
+        }
+        .app-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 20px;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: block;
+        }
+        h1 { color: #ffffff; font-size: 32px; margin-bottom: 8px; font-weight: 700; }
+        .tagline { color: #38bdf8; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+        p { color: #94a3b8; font-size: 15px; margin-bottom: 28px; line-height: 1.6; }
+        
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            padding: 15px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .feature-item { font-size: 13px; color: #cbd5e1; }
+        .feature-item i { display: block; font-size: 18px; color: #38bdf8; margin-bottom: 6px; }
+
+        .btn { 
+            background: linear-gradient(135deg, #2563eb, #1d4ed8); 
+            color: white; 
+            padding: 16px 28px; 
+            text-decoration: none; 
+            border-radius: 12px; 
+            font-weight: 600; 
+            font-size: 16px; 
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+        .btn:hover { 
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+        }
     </style>
 </head>
 <body>
     <div class="card">
+        <img src="loca_icon.png" alt="Loca App Icon" class="app-icon">
         <h1>Loca App</h1>
+        <div class="tagline">Local Market Online</div>
         <p>Aapke local market ka apna app. Niche diye button par click karke direct APK download karein.</p>
-        <a href="https://drive.google.com/uc?export=download&id=1KmNpiANb-xkXBs3CmNGGIk7gt5CjaF0u" class="btn">Download Loca APK</a>
+        
+        <div class="features">
+            <div class="feature-item"><i class="fa-solid fa-bolt"></i> Fast</div>
+            <div class="feature-item"><i class="fa-solid fa-shield-halved"></i> Secure</div>
+            <div class="feature-item"><i class="fa-solid fa-bag-shopping"></i> Local</div>
+        </div>
+
+        <a href="https://drive.google.com/uc?export=download&id=1KmNpiANb-xkXBs3CmNGGIk7gt5CjaF0u" class="btn">
+            <i class="fa-solid fa-download"></i> Download Loca APK
+        </a>
     </div>
 </body>
 </html>
