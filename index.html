@@ -14,45 +14,86 @@
             justify-content: center; 
             align-items: center; 
             min-height: 100vh; 
-            padding: 20px; 
+            padding: 30px 20px; 
             color: #fff;
         }
         .card { 
             background: rgba(255, 255, 255, 0.05); 
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            padding: 40px 30px; 
+            padding: 40px 24px; 
             border-radius: 24px; 
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); 
             text-align: center; 
-            max-width: 420px; 
+            max-width: 520px; 
             width: 100%; 
         }
         .app-icon {
-            width: 90px;
-            height: 90px;
-            border-radius: 20px;
+            width: 110px;
+            height: 110px;
+            border-radius: 22px;
             object-fit: cover;
-            margin: 0 auto 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            margin: 0 auto 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
             border: 2px solid rgba(255, 255, 255, 0.2);
             display: block;
         }
-        h1 { color: #ffffff; font-size: 32px; margin-bottom: 8px; font-weight: 700; }
-        .tagline { color: #38bdf8; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
-        p { color: #94a3b8; font-size: 15px; margin-bottom: 28px; line-height: 1.6; }
+        h1 { color: #ffffff; font-size: 30px; margin-bottom: 6px; font-weight: 700; }
+        .tagline { color: #38bdf8; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 14px; }
+        p { color: #94a3b8; font-size: 15px; margin-bottom: 24px; line-height: 1.5; }
         
         .features {
             display: flex;
             justify-content: space-around;
-            margin-bottom: 30px;
-            padding: 15px 0;
+            margin-bottom: 24px;
+            padding: 12px 0;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         .feature-item { font-size: 13px; color: #cbd5e1; }
         .feature-item i { display: block; font-size: 18px; color: #38bdf8; margin-bottom: 6px; }
+
+        /* App Screenshots Showcase */
+        .showcase-title {
+            font-size: 14px;
+            color: #38bdf8;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+        .screenshots-grid {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 12px;
+            margin-bottom: 24px;
+            scrollbar-width: thin;
+            scrollbar-color: #38bdf8 transparent;
+        }
+        .screenshots-grid::-webkit-scrollbar {
+            height: 6px;
+        }
+        .screenshots-grid::-webkit-scrollbar-thumb {
+            background-color: #38bdf8;
+            border-radius: 10px;
+        }
+        .screenshot-card {
+            flex: 0 0 130px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            background: rgba(0,0,0,0.2);
+        }
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
 
         .btn { 
             background: linear-gradient(135deg, #2563eb, #1d4ed8); 
@@ -78,7 +119,8 @@
 </head>
 <body>
     <div class="card">
-        <img src="loca_icon.png" alt="Loca App Icon" class="app-icon">
+        <!-- Main Logo -->
+        <img src="loca_icon.jpeg" alt="Loca App Logo" class="app-icon">
         <h1>Loca App</h1>
         <div class="tagline">Local Market Online</div>
         <p>Aapke local market ka apna app. Niche diye button par click karke direct APK download karein.</p>
@@ -87,6 +129,17 @@
             <div class="feature-item"><i class="fa-solid fa-bolt"></i> Fast</div>
             <div class="feature-item"><i class="fa-solid fa-shield-halved"></i> Secure</div>
             <div class="feature-item"><i class="fa-solid fa-bag-shopping"></i> Local</div>
+        </div>
+
+        <!-- Screenshots Preview Section -->
+        <div class="showcase-title"><i class="fa-solid fa-mobile-screen"></i> App Preview</div>
+        <div class="screenshots-grid">
+            <div class="screenshot-card"><img src="s1.jpeg" alt="Market Highlights"></div>
+            <div class="screenshot-card"><img src="s2.jpeg" alt="Store View"></div>
+            <div class="screenshot-card"><img src="s3.jpeg" alt="Products Listing"></div>
+            <div class="screenshot-card"><img src="s4.jpeg" alt="Seller Dashboard"></div>
+            <div class="screenshot-card"><img src="s5.jpeg" alt="Order Summary"></div>
+            <div class="screenshot-card"><img src="s6.jpeg" alt="Order History"></div>
         </div>
 
         <a href="https://drive.google.com/uc?export=download&id=1KmNpiANb-xkXBs3CmNGGIk7gt5CjaF0u" class="btn">
